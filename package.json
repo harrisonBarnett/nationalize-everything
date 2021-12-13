@@ -1,6 +1,7 @@
 {
   "name": "svelte-app",
   "version": "1.0.0",
+
   "private": true,
   "scripts": {
     "build": "rollup -c",
@@ -23,5 +24,8 @@
     "express": "^4.17.1",
     "request": "^2.88.2",
     "sirv-cli": "^1.0.0"
+  },
+  "engines": {
+    "node": "14.15.4"
   }
 }

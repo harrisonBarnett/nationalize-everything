@@ -7,7 +7,7 @@
 
 	const handleClick = () => {
 		nationalized = fetch('/dostuff')
-			.then((res) => res.json())
+
 			.then((returned) => {
 				nationalized = returned.word
 			})
