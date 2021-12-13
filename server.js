@@ -4,14 +4,14 @@ const app = express()
 const port = process.env.PORT || 5000
 const cors = require('cors')
 const path = require('path')
-const api_helper = require('./API_helper')
+const axios = require('axios')
 
 app.use(cors())
 
 app.get('/dostuff', (req, res) => {
-    api_helper.make_API_call(process.env.API_URL)
+    axios.get(process.env.API_URL)
         .then(response => {
-            res.send(response)
+            res.send(response.data)
         })
         .catch(err => {
             res.send(err)
