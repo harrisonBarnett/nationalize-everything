@@ -5,7 +5,6 @@
 			nationalized = returned.word
 		})
 		.catch(err => {console.log(err)})
-
 	const handleClick = () => {
 		nationalized = fetch('/dostuff')
 			.then((res) => res.json())
